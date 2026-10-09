@@ -1,0 +1,286 @@
+
+*{
+    margin: 0;
+}
+.menue{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.side{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+}   
+
+
+.mc{
+    display: flex;
+    color: aliceblue;
+    padding: 0 50px;
+    height: 100%;
+    align-items: center
+    
+    
+}
+
+.logo{
+    flex: 1;
+    color: green;
+    font-size: 30px;
+    font-family:'Comfortaa', sans-serif; 
+    
+    
+
+}
+
+.menuelist{
+    flex: 6;
+    
+}
+
+.profile{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+
+.list2{
+    list-style:none;
+    display: flex;
+    
+}
+.litem{
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.profileimg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.protext{
+    margin: 0 0 0 10px;
+}
+
+.toggle{
+    height: 18px;
+    width: 40px;
+    background-color: white;
+    border-radius:10px;
+    display: flex;
+    color: black;
+    align-items: center;
+    position: relative;
+    justify-content  :space-evenly;
+
+    
+}
+
+.toggle .material-symbols-rounded{
+    font-size: 14px  ;
+    
+    
+}
+.toggleball{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    transform: translateX(-10px);
+    transition: all 1s ease;
+}
+
+.side .sideicon{
+    font-size:30px;
+    margin-bottom: 60px;
+}
+
+
+
+.content{
+    margin-left: 50px;
+    min-height: calc(100vh - 50px);
+    background-color: #151515
+}
+
+
+
+
+.f{
+    height: 50vh;
+    background-color:tomato ;
+    padding: 50px;
+}
+
+.f-img{
+    width: 200px;
+}
+
+.f-p{
+    font-size: 15px;
+    width: 500px;
+    margin: 30px 0; 
+}
+
+.f-b{
+    border: none;
+    background-color: lightgreen;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    height: 35px;
+    border-radius: 5px;
+    
+}
+
+h1{
+    padding: 0 30px;
+}
+.listimg{
+    width:300px;
+    transition: ease-in-out 0.5s all;
+    border-radius: 10px;
+}
+
+.listitem:hover .listimg{
+    transform: scale(1.2);
+    margin: 0 40px;
+    opacity: 0.5;  
+}
+
+.listitem:hover .listtitle,
+.listitem:hover .listp,
+.listitem:hover .listb{
+    opacity: 1;
+    
+}
+
+.listtitle{
+    position: absolute;
+    background-color: lightslategray;
+    font-size: 30px;
+    font-weight: 800;
+    left: 50px;
+    top: 20px;
+    opacity: 0;
+    transition: ease-in-out 0.5s all;
+
+}
+
+.listp{
+    color: white;
+    position: absolute;
+    width: 270px;
+    background-color: lightslategray;
+    font-size: 15px;
+    font-weight: 800;
+    left: 50px;
+    top: 65px;
+    opacity: 0;
+    transition: ease-in-out 0.5s all;
+}
+
+.listb{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    background-color: transparent;
+    border: none;
+    color: wheat;
+    
+    border-radius: 10px;
+    border-bottom: white solid 1px;
+    opacity: 0;
+    transition: ease-in-out 0.5s all;
+}
+
+
+.list{
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+    transition: ALL 1S ease-in-out;
+    
+    
+    
+}
+
+.listitem{
+    margin: 30px 20px 60px 0 ;
+    position: relative;
+    
+}
+
+.arrow{
+    position: absolute;
+    font-size: 180px;
+    color: lightgray;
+    opacity: 0.5;
+    top: 40px;
+    right: 10px;
+    cursor: pointer;
+   
+
+}
+.listwraper{
+    position: relative;
+    margin:0 30px; ;
+    overflow: hidden;
+    
+    
+    
+        
+    
+}
+
+h1{
+    color: white;
+}
+
+/*active*/
+
+.content.active{
+    background-color: aliceblue;
+}
+
+
+.mc.active{
+    background-color: white;
+    color: black;
+}
+
+.side.active{
+    background-color: white;
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.modes.active{
+    color: white;
+}
+
+.toggleball.active{
+    background-color: white;
+    transform: translateX(10px)
+}
+
+h1.active{
+    color: black;
+}
